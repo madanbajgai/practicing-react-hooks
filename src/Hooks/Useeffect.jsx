@@ -23,7 +23,7 @@ const Useeffect = () => {
       <button onClick={() => setResourceType("comments")}>Comments</button>
       <h2>{resourceType}</h2>
       {items.map((item) => (
-        <pre>{JSON.stringify(item)}</pre>
+        <pre key={item.id}>{JSON.stringify(item)}</pre>
       ))}
     </div>
   );
