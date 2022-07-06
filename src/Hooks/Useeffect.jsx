@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Useeffect = () => {
-  const [resourceType, setResourceType] = useState("posts");
+  const [resourceType, setResourceType] = useState("users");
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,8 @@ const Useeffect = () => {
     };
   }, [resourceType]);
   return (
-    <div>
+    <div className="container">
+      <h1>UseEffect Demo</h1>
       <button onClick={() => setResourceType("posts")}>Posts</button>
       <button onClick={() => setResourceType("users")}>Users</button>
       <button onClick={() => setResourceType("comments")}>Comments</button>
