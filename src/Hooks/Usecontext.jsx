@@ -15,6 +15,7 @@ const Usecontext = () => {
   };
   return (
     <div className="container">
+      <h1>UseContext Demo</h1>
       <button onClick={toggleTheme}>Toggle Theme</button>
       <div style={themeStyle}>Theme</div>
     </div>

@@ -5,6 +5,7 @@ import UseMemo from "./Hooks/UseMemo";
 import UseRef from "./Hooks/UseRef";
 import Usecontext from "./Hooks/Usecontext";
 import { ThemeProvider } from "../ThemeContext";
+import Usecallback from "./Hooks/Usecallback";
 // import { createContext } from "react"; //METHOD:2
 
 // export const ThemeContext = createContext(); //METHOD:2
@@ -24,6 +25,7 @@ function App() {
         <UseMemo />
         <UseRef />
         <Usecontext />
+        <Usecallback />
       </ThemeProvider>
       {/* </ThemeContext.Provider> //METHOD:2 */}
     </div>
